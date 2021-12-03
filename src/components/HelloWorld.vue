@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('../assets/GapNoName.png')"
           class="my-3"
           contain
           height="200"
@@ -12,16 +12,12 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          Grow A Pair
         </h1>
 
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
+          An application made by Zack Pearson, Bethany Biggi,
+          Rei Silva and Maria Liu
         </p>
       </v-col>
 
@@ -32,7 +28,11 @@
         <h2 class="headline font-weight-bold mb-3">
           What's next?
         </h2>
-
+        <v-row>
+          <v-col cols="12">
+            <v-btn>People</v-btn>
+          </v-col>
+        </v-row>
         <v-row justify="center">
           <a
             v-for="(next, i) in whatsNext"
@@ -134,16 +134,8 @@ export default {
     ],
     whatsNext: [
       {
-        text: 'Explore components',
-        href: 'https://vuetifyjs.com/components/api-explorer'
-      },
-      {
-        text: 'Select a layout',
-        href: 'https://vuetifyjs.com/getting-started/pre-made-layouts'
-      },
-      {
-        text: 'Frequently Asked Questions',
-        href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions'
+        text: 'People',
+        href: 'http://172.16.0.70:8080/people'
       }
     ]
   })

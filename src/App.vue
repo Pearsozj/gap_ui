@@ -5,36 +5,24 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
+      <div>
+        <img
+          alt="Gap Logo"
+          class="mr-2"
+          :aspect-ratio="1"
+          :src="require('./assets/GapNoName.png')"
+
+          height="64"
         />
 
-        <v-img
-          alt="Vuetify Name"
+        <img
+          alt="Grow A Pair"
           class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
+          style="vertical-align:center"
+          :src="require('./assets/Gap.png')"
+          height="32"
         />
       </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-main>
