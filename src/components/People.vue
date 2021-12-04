@@ -4,7 +4,7 @@
           v-for="person in people"
           :key="person.id"
         >
-          {{ person.first_name }} {{ person.last_name }}
+          {{ person.first_name }} {{ person.last_name }} {{person.email}}
         </li>
   </ul>
 </template>
