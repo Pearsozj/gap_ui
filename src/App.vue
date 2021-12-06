@@ -30,12 +30,11 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
         text
       >
-        <span class="mr-2">Get Started</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">Add a new account</span>
+        <v-icon>mdi-account-circle</v-icon>
       </v-btn>
     </v-app-bar>
 

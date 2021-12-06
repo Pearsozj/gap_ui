@@ -30,7 +30,14 @@
         </h2>
         <v-row>
           <v-col cols="12">
-            <v-btn>People</v-btn>
+            <v-btn
+              href="http://172.28.109.44:8080/people"
+              rounded
+              color="primary"
+              >
+              People
+                <v-icon>mdi-account-circle</v-icon>
+              </v-btn>
           </v-col>
         </v-row>
         <v-row justify="center">
@@ -64,6 +71,11 @@
           >
             {{ link.text }}
           </a>
+          <v-btn
+              href="https://www.greeku.com/collections/big-little/fraternity"
+              rounded
+              color="primary"
+        >Learn about fraternities and soroities</v-btn>
         </v-row>
       </v-col>
 
@@ -97,46 +109,9 @@ export default {
 
   data: () => ({
     ecosystem: [
-      {
-        text: 'vuetify-loader',
-        href: 'https://github.com/vuetifyjs/vuetify-loader'
-      },
-      {
-        text: 'github',
-        href: 'https://github.com/vuetifyjs/vuetify'
-      },
-      {
-        text: 'awesome-vuetify',
-        href: 'https://github.com/vuetifyjs/awesome-vuetify'
-      }
+
     ],
     importantLinks: [
-      {
-        text: 'Documentation',
-        href: 'https://vuetifyjs.com'
-      },
-      {
-        text: 'Chat',
-        href: 'https://community.vuetifyjs.com'
-      },
-      {
-        text: 'Made with Vuetify',
-        href: 'https://madewithvuejs.com/vuetify'
-      },
-      {
-        text: 'Twitter',
-        href: 'https://twitter.com/vuetifyjs'
-      },
-      {
-        text: 'Articles',
-        href: 'https://medium.com/vuetify'
-      }
-    ],
-    whatsNext: [
-      {
-        text: 'People',
-        href: 'http://172.16.0.70:8080/people'
-      }
     ]
   })
 }
